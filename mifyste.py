@@ -152,7 +152,7 @@ def run_minify(gridpath, steampath, overwrite, clearcache):
             
 
     window['-STATUS-'].update(f'{counter_processed*5} files have been added to {gridpath}')
-    if clear_steamcache:
+    if clearcache:
         window['-STATUS-'].update(f'Cleaning steam library cache.')
         clear_steamcache(steampath)
         window['-STATUS-'].update(f'{counter_processed*5} added and cache cleaned!')
