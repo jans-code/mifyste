@@ -147,7 +147,7 @@ def run_minify(gridpath, steampath, overwrite, clearcache):
             shutil.copy(resource_path() + "/resources/centerlogo.json",gridpath+appid+".json")
             shutil.copy(resource_path() + "/resources/herobg.png",gridpath+appid+"_hero.png")
             counter_processed += 1
-            window['-STATUS-'].update(f'{counter_processed} of {total_games} games processed.')
+            window['-STATUS-'].update(f'{counter_processed} of {total_games} games processed...')
             window.refresh()
             
 
